@@ -34,7 +34,7 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
                 <form >
                     <input value={inputText} onChange={inputTextHandler} className="todo__input"
                         placeholder="Create a new todo..." />
-                    <button onClick={submitTodoHandler} type="submit">+</button>
+                    <button className="submit" onClick={submitTodoHandler} type="submit">+</button>
                 </form>
 
             </div>

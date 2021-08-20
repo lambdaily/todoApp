@@ -1,11 +1,13 @@
 import React from 'react';
 
-const Filters = ({todos}) => {
-  
+const Filters = ({setStatus}) => {
+  const statusHandler = (e) => {
+    setStatus(e.target.value);
+  }
   return (
     <>
         <div className="select">
-            <select name="todos" className="filter-todos">
+            <select onChange={statusHandler} name="todos" className="filter-todos">
                 <option value="all">All</option>
                 <option value="completed">Completed</option>
                 <option value="uncompleted">Uncompleted</option>
