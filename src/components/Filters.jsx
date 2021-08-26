@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Filters = ({setStatus}) => {
+const Filters = ({setStatus, status}) => {
+
   const statusHandler = (e) => {
     setStatus(e.target.value);
   }
@@ -13,7 +14,7 @@ const Filters = ({setStatus}) => {
                 <option value="uncompleted">Uncompleted</option>
             </select>
             <div className="dato">
-              <h2> They are x todos</h2>
+              <h2> They are x todos in {status} </h2>
             </div>
 
         </div>

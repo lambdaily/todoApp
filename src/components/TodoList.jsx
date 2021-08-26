@@ -1,7 +1,9 @@
 import React from 'react';
 import Todo from './Todo';
 
-const TodoList = ({todos, setTodos, filterTodos }) => {
+
+const TodoList = ({todos, setTodos, filterTodos, status}) => {
+    console.log(filterTodos.length);
 
     return (
         <div className="todo-container">
@@ -16,6 +18,7 @@ const TodoList = ({todos, setTodos, filterTodos }) => {
                     />
                 ))}
             </ul>
+
 
         </div>
     )

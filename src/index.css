@@ -205,3 +205,8 @@ button {
   text-decoration: line-through;
   opacity: .0.5;
 }
+
+.todo-list {
+  display: flex;
+  flex-direction:column;
+}
